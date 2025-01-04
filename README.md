@@ -1,4 +1,3 @@
-
 # 深链接技术文档  
 
 ## **简介**  
@@ -107,3 +106,28 @@ alipays://platformapi/startapp?appId=2021001141626787&query=appName=菜鸟&appIc
 2. **深链接 -> 外部链接**  
    使用支付宝开放平台工具生成外部链接。
 
+---
+
+## **注意事项**  
+1. **深链接依赖客户端**：仅能在对应的微信或支付宝客户端中使用，浏览器不支持直接打开深链接。  
+2. **测试环境**：建议先在开发或测试环境中验证链接跳转功能是否正常。  
+3. **安全性**：深链接中的敏感参数建议加密传输，避免被滥用。
+
+---
+
+## **示例代码**  
+
+### **微信深链接示例**  
+```html
+<a href="weixin://dl/business/?t=D7tEQb1YLnf">打开微信小程序</a>
+```
+
+### **支付宝深链接示例**  
+```html
+<a href="alipays://platformapi/startapp?appId=2021001141626787&query=appName=菜鸟&appIcon=https://appstoreisvpic.alipayobjects.com/prod/142ceec2-0811-4a99-8252-d299a4dc2c6a.png@120w.png&chInfo=app_desktop">打开支付宝小程序</a>
+```
+
+---
+
+## **版权说明**  
+本文档由 [你的 GitHub 用户名] 编写，版权归作者所有，仅供学习交流使用。
